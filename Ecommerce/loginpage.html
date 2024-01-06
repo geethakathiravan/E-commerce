@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="ecom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<style>
+  body{
+    background-image: url(light.jpg);
+  }
+    .navbar{
+    border: 2px gray;
+    position: sticky;
+    }
+.fixed-top{
+   
+    border: 2px solid gray;
+    height: 100px;
+    background-color: aliceblue;
+    box-shadow:10px 10px 10px rgba(0,0,0,.3);
+}
+.d-flex{
+    margin-left: 70px;
+    margin-top: 10px;
+}
+   .d-flex button{
+    height: 38px;
+    background-color: green;
+    color: black;
+}
+
+.navbar-brand{
+    font-size: 40px;
+    color: red;
+    margin-bottom: 10px;
+
+}
+.nav-item{
+    margin-left: 150px;
+    font-size: 25px;
+    color: green;
+    margin-bottom: 60px;
+    
+}
+.nav-item a{
+    color: green;
+}
+#navbarSupportedContent a:hover{
+    color: orangered;
+    
+}
+
+
+ #form{
+border-radius: 10px;
+border: 3px solid pink;
+box-shadow:20px 20px 20px 20px rgba(0,0,0,.3),
+           inset 4px 4px 10px 5px pink;
+margin: 50px 100px 50px 100px;
+background-color: rgb(201, 133, 144);
+opacity: 0.8;
+ }
+    #form label{
+        padding: 20px;
+        height: 30px;
+        font-style: bold;
+        color:black;
+        font-size: 20px;
+       font-weight: 300px;
+    }
+    #form input{
+      border: 2px solid black;
+      border-radius: 5px;
+width: 400px;
+opacity: 0.9;
+    }
+    .col-md-2{
+     margin-right: 30px;
+     position: absolute;
+     top:350px;
+     margin-left: 530px;
+    }
+    #form form{
+        margin-left: 30px;
+        margin-bottom: 20px;
+    }
+    #form button{
+      margin-left: 100px;
+      margin-top: 15px;
+      background-color: green;
+
+    }
+    .col-12 input{
+        margin-top: 25px;
+        
+    }
+    .col-md-4 {
+       position: absolute;
+       top: 250px;
+       margin-left: 530px;
+    }
+    .login h3{
+        text-align: center;
+        margin-top: 100px;
+        font-size: 50px;
+        text-shadow: 5px 6px 5px rgba(0, 0, 0, 0.3);;
+              
+    }
+    .form-check input{
+      margin-right: 200px;
+      margin-top: 30px;
+      background-color: green;
+} 
+    .form-check label{
+      margin-left: 20px;
+    }
+    .navbar-brand img{
+    border-radius: 50px;
+ background-color: gray;
+ border:2px solid #212529;
+    
+}
+</style>
+<body>
+    <div class="fixed-top">
+        <div class="navbar">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="logo1.png" width="100xp" height="100xp"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="ecom.html">Home</a>
+                  </li>
+    <li class="nav-item">
+                    <a class="nav-link" href="abouts.html">About</a>
+                  </li>
+    <li class="nav-item">
+      <a class="nav-link" href="slide.html">Deals</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="loginpage.html">Order</a>
+    </li>
+    <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+          </div>
+        </div>
+    
+    <!--login page-->
+    
+    <div class="login">
+        <h3><marquee>PLACE ORDER</marquee></h3>
+    </div>
+    <section id="form">
+      <form form="login_form" onsubmit="submit_form()">
+        <form class="row g-3">
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail4" placeholder="Enter your email">
+            </div>
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">Password</label>
+              <input type="password" class="form-control" id="inputPassword4" placeholder="Enter your password">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress2" class="form-label">Address 2</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">City</label>
+              <input type="text" class="form-control" id="inputCity" placeholder="Enter your City">
+            </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">State</label>
+              <select id="inputState" class="form-select">
+                <option selected>Choose...</option>
+                <option>Tamilnadu</option>
+                <option>Kerala</option>
+                <option>Mumbai</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+              <label for="inputZip" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="inputZip" placeholder="Enter your code">
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Check me out
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+        </form>
+    </section>
+    <!-- <script>
+      function validateform(){
+        var password=document.myform.password.value;
+        if(password.length<6){
+          alert("password must be at least 6 characters long.");
+          return false;
+        }
+      }
+    </script> -->
+    <script type="text/javascript">
+      function submit_form(){
+        alert("Submit successfully");
+      }
+    </script>
+<!--footer-->
+<section id="footer">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3">
+        <h4>About Us</h4>
+        <p>Project<br>
+        About Us<br>
+        Blog<br>
+        Awards
+      </p>
+      </div>
+      <div class="col-sm-3">
+        <h4>Help support</h4>
+        <p>Terms<br>
+        Support policy<br>
+      Refund policy<br>
+    FAQs
+  </p>
+      </div>
+      <div class="col-sm-3">
+        <h4>Address</h4>
+        <p>
+          <i class="fa-solid fa-location-dot"></i>  136,Main Street<br>
+        Mayiladuthurai<br>
+      609001.</p>
+      </div>
+      <div class="col-sm-3">
+        <h4>Contact</h4>
+      <p>
+        <i class="fa-solid fa-envelope"></i>   Email:ekart@gmail.com<br>
+        <i class="fa-solid fa-phone"></i>    Phone:8495872834<br>
+        <i class="fa-brands fa-square-whatsapp"></i>Whatsapp:8574939382</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--icons-->
+
+
+<section id="last">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6">
+        <i class="fa-brands fa-whatsapp fa-xl"></i>
+        <i class="fa-brands fa-facebook fa-xl"></i>
+        <i class="fa-brands fa-x-twitter fa-xl"></i>
+        <i class="fa-brands fa-instagram fa-xl"></i>
+        <i class="fa-brands fa-github fa-xl"></i>
+      </div>
+      <div class="col-sm-6">
+        <p>@Copyrights 2020-2024.
+      
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+</body>
+</html>
